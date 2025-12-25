@@ -155,3 +155,14 @@ I successfully implemented Task 1’s required **Dual-Tower bidirectional retrie
    - Recall@1 = 0.3429  
    - Recall@5 = 0.5714  
    - Recall@10 = 0.7429  
+
+---
+
+## 8. Online Demo (Interactive)
+To demonstrate the system in an interactive “online demo” format, I implemented a lightweight web UI (ColabService-style) using **Gradio**. The demo provides two interactive tabs:
+
+- **Protein → Molecule**: input/select a UniProt ID and retrieve Top-K SMILES.
+- **Molecule → Protein**: input/select a SMILES and retrieve Top-K UniProt IDs.
+
+Because this demo is launched from Colab during runtime (with a shareable web link), it supports real-time interaction while the code is running.  
+A screen recording of the interaction workflow is provided as **`demo.mp4`**, showing example queries and retrieval results for both directions.
